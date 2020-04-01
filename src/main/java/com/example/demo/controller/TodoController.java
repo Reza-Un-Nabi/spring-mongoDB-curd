@@ -29,7 +29,7 @@ public class TodoController {
 	TodoRepositories todoRepository;
 
 
-	@GetMapping("/todos") public List<Todo> getAllTodos() { Sort
+	@GetMapping("/getTodos") public List<Todo> getAllTodos() { Sort
 		sortByCreatedAtDesc = new Sort(Sort.Direction.DESC, "createdAt"); return
 				todoRepository.findAll(sortByCreatedAtDesc); }
 
